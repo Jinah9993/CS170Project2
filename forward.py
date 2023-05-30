@@ -1,4 +1,5 @@
 from func import *
+from classify import *
 def forward(d):
     f =d[1:]
     used = []
