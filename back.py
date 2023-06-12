@@ -10,7 +10,7 @@ def back(d):
         currBest = 0 
         for j in range(len(f)):
             if f[j] not in remove:    
-                a =eval(f,remove,f[j])
+                a =validate(f,remove,f[j])
                 print("--Considering removing feature "+str(f[j])+ ". Score = " + str(a))
                 if a >currBest:
                     currBest = a

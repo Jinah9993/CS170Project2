@@ -11,7 +11,7 @@ def forward(d):
         currBest = 0 
         for j in range(len(f)):
             if f[j] not in used:    
-                a = eval(f,used,f[j])
+                a = validate(f,used,f[j])
                 print("--Considering adding feature "+str(f[j])+". Score = "+str(a))
                 if a >currBest:
                     currBest = a
