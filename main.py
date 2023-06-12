@@ -27,13 +27,13 @@ def main():
 
         if alg_choice == 1:
             d=pandas.read_csv(file_name,sep=' ',header=None,engine='python',skipinitialspace=True)
-            curr = [3,5]
-            add = [7]
+            curr = []
+            add = []
             print_result(d,curr,add)
         elif alg_choice == 2:
             d=pandas.read_csv(file_name,sep=' ',header=None,engine='python',skipinitialspace=True)
-            curr = [1,15]
-            add = [27]
+            curr = []
+            add = []
             print_result(d,curr,add)
         elif alg_choice == 3:
             print("Hello World!")
