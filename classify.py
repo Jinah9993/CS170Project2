@@ -10,8 +10,7 @@ def validate(d,curr,add):
         dist = math.inf
         neighbor = 111
         nClass = 111
-        print("Object "+str(i+1)+" is of class "+str(int(classes[i])))
-        start = time.time()
+        # print("Object "+str(i+1)+" is of class "+str(int(classes[i])))
         for j in range(len(d)):
             if i != j:
                 currDist=math.sqrt(sum(pow((f[i]-f[j]),2)))
@@ -19,9 +18,7 @@ def validate(d,curr,add):
                     dist = currDist
                     neighbor = j
                     nClass = classes[j]
-        end = time.time()
-        print("Its nearest neighbor is Object "+str(neighbor+1)+" of class "+str(int(nClass)))
-        print("Time taken: "+str((end-start)*10**3)+" ms")
+        # print("Its nearest neighbor is Object "+str(neighbor+1)+" of class "+str(int(nClass)))
         if classes[i]==nClass:
             c=c+1
     return c/len(d)

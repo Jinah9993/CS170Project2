@@ -1,9 +1,12 @@
 from forward import *
 def back(d):
-    f =d[1:]
+    f =d.shape[1] -1
+    f = range(f)
+    
     remove = []
     best = []
     score = default(f)
+    
     for i in range(len(f)):
         print("Level "+str(i+1) +" of the search tree.")
         removed = 0
